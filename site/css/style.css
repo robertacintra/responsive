@@ -306,7 +306,8 @@ a:hover {
 }
 
 .destination__description--groenlandia {
-    
+    padding-left: 40px;
+    text-align: left;
 }
 
 .destination__description--antartida {

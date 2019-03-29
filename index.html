@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <title>Mundo Gelado</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <title>Agência Mundo Gelado</title>
 </head>
 <body>
 <section>
@@ -22,22 +23,23 @@
                 <li>
                     <a href="#contato" class="nave__link">Contato</a>
                 </li>
+<!-- MOBILE <img src="./imagens-do-site/menu-hamburger" alt="Menu mobile" class="nave__mobile"> --> 
             </ul>
         </div>
     </nav>
 </section>
 
 <main>
-    <section class="header">
+    <section class="header transition">
         <div class="header__container">
             <h1 class="header__titulo">Mundo gelado</h1>
             <h2 class="header__subtitulo">A agência de viagens que te leva aos lugares</h2> 
             <h2 class="header__subtitulo">mais congelantes do planeta.</h2>
-            <a href="#" class="btn header__btn">Quero saber mais</a>
+            <a href="#" class="btn btn--primary header--btn transition">Quero saber mais</a>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="sobre">
         <h2 class="about__titulo">A agência Mundo gelado</h2>
         <div class="about__texto">
             <p>Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens</p>
@@ -48,32 +50,44 @@
         </div>
     </section>
 
+<!-- SEÇÃO INTEIRA; SIBERIA + MOSAICO; MEIO DO SITE -->
+
+    <section id="destinos">
 <!-- siberia -->
-
-    <section>
-
-        <div class="destination">
-            <img src="imagens-do-site/siberia-1.jpg" alt="Foto Siberia" class="destination__img">
-            <span class="destination__border"></span>
-            <div class="destination__text">
-            <h3>Sibéria</h3>
-            <p>O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o local habitado mais frio do mundo, a aldeia de Oymyakon.</p>
+        <div class="container">
+            <div class="destination destination--siberia">
+                <img src="imagens-do-site/siberia-1.jpg" alt="Foto Siberia" class="destination--siberia__img">
+                <span class="destination__border"></span>
+                    <div class="destination__text">
+                    <h3>Sibéria</h3>
+                    <p>O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o local habitado mais frio do mundo, a aldeia de Oymyakon.</p>
+                    </div>
             </div>
         </div>
 
-<!-- MOSAIC STARTS HERE -->
+<!-- COMEÇO DO MOSAICO -->
 
-        <div class="mosaico__container">
-            <div class="destination">
+        <div class="container">
+            <div class="destination--groenlandia">
+            <div class="destination--groenlandia__wrapper-img">
+                <img src="./imagens-do-site/groenlandia-1.jpg" alt="Foto groenlandia" class="destination--groenlandia__img">
+            </div>
+            <div class="destination__description destination__description--groenlandia">
                 <h4 class="destination__title">Groenlândia</h4>
-                <p class="destination__paragraph">A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
-                <img src="imagens-do-site/groenlandia-1.jpg" alt="Foto groenlandia" class="mosaico__img">
+                <p class="destination_paragraph destination_paragraph--groenlandia">A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
             </div>
-            <div class="destination">
-                <img src="imagens-do-site/antartida-1.jpg" alt="Foto antartida" class="mosaico__img">
+            </div>
+
+            <div class="destination--antartida">
+            <div class="destination__description destination__description--antartida">
                 <h4 class="destination__title">Antártida</h4>
-                <p class="destination__paragraph">É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta. A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C.</p>
+                <p class="destination_paragraph">É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C.</p>
             </div>
+            <div class="destination--groenlandia__wrapper-img">
+                <img src="./imagens-do-site/antartida-1.jpg" alt="Foto antartida" class="destination--antartida__img">
+            </div>
+            </div>
+        </div>
         </div>
     </section>
 
